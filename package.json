@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "node-xlsx": "^0.24.0",
+    "pg": "^8.16.2",
     "postgres": "^3.4.4"
   }
 }

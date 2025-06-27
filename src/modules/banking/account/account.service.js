@@ -4,7 +4,7 @@ import {
     getAccountByIdFromRepository,
     getAccountsFromRepository,
     patchAccountInRepository,
-} from './account.repository.js';
+} from '../account/account.repository.js';
 
 // --- Service Implementation ---
 

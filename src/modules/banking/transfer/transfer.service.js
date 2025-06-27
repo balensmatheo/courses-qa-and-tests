@@ -1,4 +1,4 @@
-import { getAccountById, patchAccount } from './account.service.js';
+import { getAccountById, patchAccount } from '../account/account.service.js';
 import { createTransferInRepository, getTransfersFromRepository } from './transfer.repository.js';
 
 // --- Custom Error Classes ---

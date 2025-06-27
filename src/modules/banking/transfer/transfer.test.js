@@ -7,7 +7,7 @@ vi.mock('./transfer.repository.js', () => ({
 }));
 
 // Remplacer par le account repository
-vi.mock('./account.service.js', () => ({
+vi.mock('../account/account.service.js', () => ({
     getAccountById: vi.fn(),
     patchAccount: vi.fn(),
 }));
@@ -15,7 +15,7 @@ vi.mock('./account.service.js', () => ({
 // --- Imports ---
 import { createTransfer, getTransfers } from './transfer.service.js';
 import { createTransferInRepository, getTransfersFromRepository } from './transfer.repository.js';
-import { getAccountById, patchAccount } from './account.service.js';
+import { getAccountById, patchAccount } from '../account/account.service.js';
 
 // --- Suite de Tests pour le Service Transfer ---
 describe('Banking Transfer Service', () => {
