@@ -6,7 +6,8 @@
   "scripts": {
     "build": "vite build",
     "test": "vitest --exclude 'E2E/**,AUTH_E2E/**'",
-    "test:e2e": "npx playwright test"
+    "test:e2e": "cd E2E && npx playwright test",
+    "test:auth-e2e": "cd AUTH_E2E && npx playwright test"
   },
   "devDependencies": {
     "@httpx/exception": "^3.0.5",
